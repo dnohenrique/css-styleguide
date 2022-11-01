@@ -1,0 +1,45 @@
+@import './colors.scss';
+
+.fc-table {
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    color: $pedra_do_mar;
+  }
+
+  th,
+  td {
+    text-align: left;
+    min-width: 70px;
+    padding: 0 10px 0 10px;
+
+    &.checkbox-option {
+      padding: 0 0 0 15px;
+      min-width: 30px;
+    }
+  }
+
+  tr {
+    height: 40px;
+    border-bottom: solid 1px #e4e4e4;
+
+    &:nth-child(even) {
+      background-color: white;
+    }
+  }
+
+
+  tbody tr {
+    background-color: #fbfbfb;
+
+    &:nth-child(even):hover,
+    &:nth-child(odd):hover {
+      background-color: #f5f5f5;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16)
+    }
+  }
+
+}

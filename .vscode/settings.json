@@ -1,0 +1,52 @@
+{
+    "gitflow4code.features": [
+        {
+            "name": "feature/modal-styles",
+            "base": "develop"
+        },
+        {
+            "name": "feature/form-validate-style",
+            "base": "develop"
+        },
+        {
+            "name": "feature/remocao-modal-form",
+            "base": "develop"
+        },
+        {
+            "name": "feature/btn-rename",
+            "base": "develop"
+        },
+        {
+            "name": "feature/margins",
+            "base": "develop"
+        },
+        {
+            "name": "feature/upload-img",
+            "base": "develop"
+        },
+        {
+            "name": "feature/invoice-payment-upload",
+            "base": "develop"
+        },
+        {
+            "name": "feature/btn-danger-light",
+            "base": "develop"
+        },
+        {
+            "name": "feature/slippers-image-upload",
+            "base": "develop"
+        },
+        {
+            "name": "feature/images-upload",
+            "base": "develop"
+        },
+        {
+            "name": "feature/icon-upload",
+            "base": "develop"
+        },
+        {
+            "name": "feature/new-icons-generate",
+            "base": "develop"
+        }
+    ]
+}

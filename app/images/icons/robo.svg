@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.044" height="19.345" viewBox="0 0 23.044 19.345">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#ce3a3c}
+        </style>
+    </defs>
+    <g id="prefix__robotic" transform="translate(-91.692 -.001)">
+        <g id="prefix__Grupo_1060" data-name="Grupo 1060" transform="translate(96.999 8.415)">
+            <g id="prefix__Grupo_1059" data-name="Grupo 1059">
+                <path id="prefix__Caminho_1846" d="M160.584 105.178a2.56 2.56 0 102.56 2.56 2.56 2.56 0 00-2.56-2.56zm0 3.84a1.277 1.277 0 110-2.554v-.006a1.28 1.28 0 110 2.56z" class="prefix__cls-1" data-name="Caminho 1846" transform="translate(-158.024 -105.178)"/>
+            </g>
+        </g>
+        <g id="prefix__Grupo_1062" data-name="Grupo 1062" transform="translate(104.32 8.415)">
+            <g id="prefix__Grupo_1061" data-name="Grupo 1061">
+                <path id="prefix__Caminho_1847" d="M252.1 105.178a2.56 2.56 0 102.56 2.56 2.56 2.56 0 00-2.56-2.56zm0 3.84a1.277 1.277 0 110-2.554v-.006a1.28 1.28 0 010 2.56z" class="prefix__cls-1" data-name="Caminho 1847" transform="translate(-249.544 -105.178)"/>
+            </g>
+        </g>
+        <g id="prefix__Grupo_1064" data-name="Grupo 1064" transform="translate(91.692 .001)">
+            <g id="prefix__Grupo_1063" data-name="Grupo 1063">
+                <path id="prefix__Caminho_1848" d="M114.746 11.361a3.565 3.565 0 00-3.03-2.9 3.842 3.842 0 00-4.083-2.893h-3.712V4.165a2.131 2.131 0 10-1.28 0v1.376h-3.705a3.946 3.946 0 00-4.1 2.893 3.565 3.565 0 00-.147 7.04l-.006.032a3.936 3.936 0 004.243 3.84h8.7a3.914 3.914 0 004.243-3.84 3.565 3.565 0 002.877-4.145zm-20.079 2.865a2.278 2.278 0 010-4.377zm7.763-12.057a.851.851 0 11.851.851.851.851 0 01-.851-.851zm8.185 12.876a2.7 2.7 0 01-2.982 2.982h-8.7a2.7 2.7 0 01-2.982-2.982l-.006-5.2a2.7 2.7 0 012.982-2.982h8.7a2.7 2.7 0 012.982 2.982zm1.254-.864V9.8a2.276 2.276 0 010 4.377z" class="prefix__cls-1" data-name="Caminho 1848" transform="translate(-91.76 -.001)"/>
+            </g>
+        </g>
+        <g id="prefix__Retângulo_430" data-name="Retângulo 430" transform="translate(100.412 14.16)" style="stroke:#ce3a3c;fill:none">
+            <rect width="5.6" height="3.12" rx="1.56" style="stroke:none"/>
+            <rect width="4.6" height="2.12" x=".5" y=".5" rx="1.06" style="fill:none"/>
+        </g>
+    </g>
+</svg>

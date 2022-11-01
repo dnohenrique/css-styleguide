@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Styles Férias & Co.</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="fonts/roboto.css">
+  <link rel="stylesheet" href="styles/colors.css">
+  <link rel="stylesheet" href="styles/alerts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/text.css">
+  <link rel="stylesheet" href="styles/layouts.css">
+  <link rel="stylesheet" href="styles/table.css">
+  <link rel="stylesheet" href="styles/forms.css">
+  <link rel="stylesheet" href="styles/radio.css">
+  <link rel="stylesheet" href="styles/buttons.css">
+  <link rel="stylesheet" href="styles/switch.css">
+  <link rel="stylesheet" href="styles/progressbar.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/tab.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <!-- endbuild -->
+  <!-- build:css styles/documentation.css -->
+  <link rel="stylesheet" href="styles/documentation.css">
+  <!-- endbuild -->
+
+</head>
+
+<body style="height:100%;background-color: #f7f7f7;margin:0;">
+
+  <!-- Back to top button -->
+  <a class="back-to-top" href="#"></a>
+
+  <section class="documantation-container">
+    <h1>Style Guide Férias <span style="color: #F9B508">&</span> Co.</h1>
+  </section>
+
+  <section class="documantation-container" style="padding-top: 1px;padding-bottom: 1px;">
+    <h3>Estilos:</h3>
+    <p><a href="#titulos_e_paragrafo">Títulos e parágrafo</a></p>
+    <p><a href="#cores">Cores</a></p>
+    <p><a href="#margens">Margens</a></p>
+    <p><a href="#formulario">Formulário</a></p>
+    <p><a href="#botoes">Botões</a></p>
+    <p><a href="#alertas">Alerts</a></p>
+    <p><a href="#switch">Switch</a></p>
+    <p><a href="#tamanhos">Tamanhos</a></p>
+    <p><a href="#layout">Layout</a></p>
+    <p><a href="#table">Table</a></p>
+    <p><a href="#loading">Loading</a></p>
+    <p><a href="#progress">Progress</a></p>
+    <p><a href="#icones">Ícones</a></p>
+    <p><a href="#tooltip">Tooltip</a></p>
+
+
+  </section>
+
+
+  <section class="documantation-container" id="titulos_e_paragrafo">
+    <h2>Títulos e parágrafo</h2>
+
+    <h1>&lt;h1></h1>
+    <h1 class="weight-normal">&lt;h1></h1>
+    <h2>&lt;h2></h2>
+    <h3>&lt;h3></h3>
+    <h4>&lt;h4></h4>
+    <p><a>&lt;a></a></p>
+    <p>Nunc accumsan purus eget scelerisque tincidunt. Fusce ligula tortor, accumsan quis lectus vel, dapibus
+      condimentum urna. Aliquam et aliquet odio. Quisque eu turpis ante. Donec consequat metus augue, et malesuada magna
+      auctor vitae. Nullam non elementum urna. Duis ut congue orci. Phasellus pulvinar metus orci, id faucibus sem
+      faucibus sed.</p>
+  </section>
+
+  <section class="documantation-container" id="cores">
+    <div class="documantation-colors">
+      <h2>Cores</h2>
+      <p id="ceu-de-pipa">#CE3A3C - Céu de pipa</p>
+      <p id="pe-na-areia">#FFF4E0 - Pé na areia</p>
+      <p id="horizonte">#F9B508 - Horizonte</p>
+      <p id="por-do-sol">#F97808 - Pôr do sol</p>
+      <p id="mergulho">#00B0B0 - Mergulho</p>
+      <p id="passeio-noturno">#4E306F - Passeio Noturno</p>
+      <p id="pedra-do-mar">#535252 - Pedra do mar</p>
+      <p id="pe-na-estrada">#393E46 - Pé na estrada</p>
+    </div>
+  </section>
+
+  <section class="documantation-container" id="margens">
+    <div>
+      <h2>Margens</h2>
+      <p id="micro"><b>Micro</b> - 10px</p>
+      <p id="pequena"><b>Pequena</b> - 15px</p>
+      <p id="intermediaria"><b>Intermediária</b> - 20px</p>
+      <p id="padrao"><b>Padrão</b> - 30px</p>
+      <p id="grande-one"><b>Grande 1</b> - 45px</p>
+      <p id="grande-two"><b>Grande 2</b> - 60px</p>
+      <p id="excecao"><b>Exceções</b> - 90px, 120px</p>
+    </div>
+  </section>
+
+  <section class="documantation-container" id="formulario">
+    <h2>Formulário</h2>
+    <p>Formulários devem começar com a classe <b>.form-group</b></p>
+    <!-- inicie com a classe form-group -->
+    <div class="form-group">
+      <!-- use .form-field para dar margem entre os campos -->
+      <div class="form-field">
+        <label class="field-description">Normal input text</label>
+        <!-- use .input-field para aplicar o estilo dos inputs -->
+        <input type="text" placeholder="Normal input type Text" class="input-field">
+      </div>
+      <pre class="showcode">
+        <code>
+  &lt;div class="<b>form-group</b>"> 
+    &lt;div class="form-field">
+      &lt;label class="field-description">Normal input text</label>
+      &lt;input type="text" class="<b>input-field</b>">
+    &lt;/div>
+  &lt;/div></code>
+      </pre>
+
+      <!-- use .form-rh cobrindo todos os elementos cuja temática é do portal do RH -->
+      <div class="form-rh">
+        <div class="form-field">
+          <label class="field-description">RH input text</label>
+          <input type="text" placeholder="Input Type Text" class="input-field">
+        </div>
+      </div>
+      <pre class="showcode">
+        <code>
+  &lt;div class="form-group <b>form-rh</b>"> 
+    &lt;input type="text" class="input-field">
+  &lt;/div></code>
+      </pre>
+
+      <div class="form-field">
+        <label class="field-description">Disabled</label>
+        <input type="text" placeholder="Disabled input" class="input-field" disabled>
+      </div>
+
+      <div class="form-field">
+        <label class="field-description">Select Disabled</label>
+        <select class="input-field" disabled>
+          <option value="">-- Nenhum --</option>
+          <option value="Presidente / Proprietário">Presidente / Proprietário</option>
+          <option value="Diretor">Diretor</option>
+          <option value="Gerente">Gerente</option>
+          <option value="Supervisor">Supervisor</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label class="field-description">Select</label>
+        <select class="input-field">
+          <option value="">-- Nenhum --</option>
+          <option value="Presidente / Proprietário">Presidente / Proprietário</option>
+          <option value="Diretor">Diretor</option>
+          <option value="Gerente">Gerente</option>
+          <option value="Supervisor">Supervisor</option>
+        </select>
+      </div>
+      <pre class="showcode">
+        <code>
+  &lt;div class="form-field">
+    &lt;label class="field-description">Select&lt;/label>
+    &lt;select class="input-field">
+      &lt;option value="">-- Nenhum --&lt;/option>
+      &lt;option value="x">Presidente / Proprietário&lt;/option>
+      &lt;option value="y">Diretor&lt;/option>
+    &lt;/select>
+  &lt;/div></code>
+      </pre>
+
+      <div class="form-field">
+        <label class="field-description">Error Message</label>
+        <input type="text" placeholder="Input Error" class="input-field input-error">
+        <div class="error-message">
+          Error Message.
+        </div>
+      </div>
+      <pre class="showcode">
+        <code>
+  &lt;input type="text" placeholder="Input Error" class="input-field <b>input-error</b>">
+  &lt;div class="<b>error-message</b>">
+    Error Message.
+  &lt;/div></code>
+      </pre>
+      <div class="form-field">
+        <label class="field-description">Radio Button?</label>
+        <label class="fc-input-radio">
+          <input type="radio" name="userDocumentType" [value]=1 checked>
+          <span class="fc-checkradio"></span>
+          Sim
+        </label>
+        <label class="fc-input-radio">
+          <input type="radio" name="userDocumentType" [value]=2>
+          <span class="fc-checkradio"></span>
+          Não
+        </label>
+        <span class="form-rh">
+          <label class="fc-input-radio">
+            <input type="radio" name="userDocumentType" [value]=2>
+            <span class="fc-checkradio"></span>
+            RH
+          </label>
+        </span>
+        <label class="fc-input-radio">
+          <input type="radio" name="userDocumentType" [value]=2 disabled>
+          <span class="fc-checkradio"></span>
+          Disabled
+        </label>
+      </div>
+      <pre class="showcode">
+        <code>
+  &lt;!-- Para radio button de RH adicionar acima do elemento a classe .form-rh -->
+  &lt;label class="fc-input-radio">
+    &lt;input type="radio" name="umradio">
+    &lt;span class="fc-checkradio">&lt;/span>
+    Sim
+  &lt;/label></code>
+      </pre>
+
+      <div class="form-field">
+        <div class="checkbox_field">
+          <label>Not checked</label>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </div>
+        <div class="checkbox_field">
+          <label>Checked</label>
+          <input type="checkbox" checked="true">
+          <span class="checkmark"></span>
+        </div>
+        <div class="form-rh">
+          <div class="checkbox_field">
+            <label>Checked RH</label>
+            <input type="checkbox" checked="true">
+            <span class="checkmark"></span>
+          </div>
+        </div>
+        <div class="checkbox_field">
+          <label>Disabled</label>
+          <input type="checkbox" checked="true" disabled>
+          <span class="checkmark"></span>
+        </div>
+        <div class="checkbox_field">
+          <label>Disabled</label>
+          <input type="checkbox" disabled>
+          <span class="checkmark"></span>
+        </div>
+      </div>
+      <pre class="showcode">
+          <code>
+  &lt;!-- Para radio button de RH adicionar acima do elemento a classe .form-rh -->
+  &lt;div class="form-field">
+    &lt;div class="checkbox_field">
+      &lt;label>Um checkbox&lt;/label>
+      &lt;input type="checkbox" checked="true">
+      &lt;span class="checkmark">&lt;/span>
+    &lt;/div>            
+  &lt;/div></code>
+        </pre>
+
+    </div>
+  </section>
+
+  <section class="documantation-container documentation-buttons" id="alertas">
+    <h2>Alerts</h2>
+    <div class="fc-alert fc-alert-success">
+      <i class="icon-check"></i><b>Success</b> alert
+    </div>
+    <br />
+    <div class="fc-alert fc-alert-danger">
+      <b>Danger</b> alert
+    </div>
+    <br />
+    <div class="fc-alert fc-alert-warning">
+      <b>Warning</b> alert
+    </div>
+
+    <pre class="showcode">
+      <code>
+  &lt;div class="<b>fc-alert fc-alert-success</b>">
+    &lt;b>Success&lt;/b> alert
+  &lt;/div>
+  &lt;div class="fc-alert fc-alert-danger">
+    &lt;b>Danger&lt;/b> alert
+  &lt;/div>
+  &lt;div class="fc-alert fc-alert-warning">
+    &lt;b>Warning&lt;/b> alert
+  &lt;/div></code>
+    </pre>
+
+  </section>
+
+  <section class="documantation-container documentation-buttons" id="botoes">
+    <h2>Botões</h2>
+    <p>Botões começam com ".fc-btn .fc-btn-(type)"</p>
+
+    <!-- <button class="fc-btn fc-btn-info">info</button> -->
+    <button class="fc-btn fc-btn-dark">dark</button>
+    <button class="fc-btn fc-btn-secondary">secondary</button>
+    <button class="fc-btn fc-btn-success">success</button>
+    <button class="fc-btn fc-btn-success-rh">success-rh</button>
+    <button class="fc-btn fc-btn-danger">danger</button>
+    <button class="fc-btn fc-btn-warning">warning</button>
+    <button class="fc-btn fc-btn-light">light</button>
+    <button class="fc-btn fc-btn-light-danger">light-danger</button>
+    <button class="fc-btn fc-btn-light-rh">light-rh</button>
+    <button class="fc-btn fc-btn-success" disabled>disabled</button>
+
+    <pre class="showcode">
+        <code>
+  &lt;button class="fc-btn fc-btn-dark">dark&lt;/button>
+  &lt;button class="fc-btn fc-btn-secondary">secondary&lt;/button>
+  &lt;button class="fc-btn fc-btn-success">success&lt;/button>
+  &lt;button class="fc-btn fc-btn-success-rh">success-rh&lt;/button>
+  &lt;button class="fc-btn fc-btn-danger">danger&lt;/button>
+  &lt;button class="fc-btn fc-btn-warning">warning&lt;/button>
+  &lt;button class="fc-btn fc-btn-light">ligh&lt;/button>
+  &lt;button class="fc-btn fc-btn-light-danger">light-danger&lt;/button>
+  &lt;button class="fc-btn fc-btn-light-rh">light-rh&lt;/button>
+  &lt;button class="fc-btn fc-btn-success" disabled>disabled&lt;/button></code>
+      </pre>
+
+  </section>
+
+
+  <section class="documantation-container" id="tamanhos">
+    <h2>Tamanhos</h2>
+
+    <h5>Botão normal</h5>
+    <button class="fc-btn fc-btn-success">Normal</button>
+    <pre class="showcode">
+      <code>
+  &lt;button class="fc-btn fc-btn-success">success&lt;/button></code>
+    </pre>
+
+    <h5>Botão pequeno</h5>
+    <p>.fc-btn-sm</p>
+    <button class="fc-btn fc-btn-success fc-btn-sm">Small button</button>
+    <button class="fc-btn fc-btn-dark fc-btn-sm">Small button</button>
+    <pre class="showcode">
+        <code>
+  &lt;button class="fc-btn fc-btn-success <b>fc-btn-sm</b>">Small button&lt;/button>
+  &lt;button class="fc-btn fc-btn-dark <b>fc-btn-sm</b>">Small button&lt;/button></code>
+      </pre>
+
+    <h5>Botão grande</h5>
+    <p>.fc-btn-lg</p>
+    <button class="fc-btn fc-btn-success fc-btn-lg">Large button</button>
+    <button class="fc-btn fc-btn-dark fc-btn-lg">Large button</button>
+    <pre class="showcode">
+        <code>
+  &lt;button class="fc-btn fc-btn-success <b>fc-btn-lg</b>">Large button&lt;/button>
+  &lt;button class="fc-btn fc-btn-dark <b>fc-btn-lg</b>">Large button&lt;/button></code>
+      </pre>
+
+    <h5>Botão com full</h5>
+    <button class="fc-btn fc-btn-success" full>
+      Botão com full</button>
+
+    <pre class="showcode">
+            <code>
+  &lt;button class="fc-btn fc-btn-success">Normal&lt;/button>
+  &lt;button class="fc-btn fc-btn-success" <b>full</b>>Botão com full&lt;/button></code>
+    </pre>
+
+  </section>
+
+  <section class="documantation-container documentation-buttons" id="switch">
+    <h2>Switch</h2>
+    <p><b>Default</b></p>
+    <div class="fc-switch">
+      <label>
+        Off
+        <input type="checkbox">
+        <span class="lever"></span> On
+      </label>
+    </div>
+    <p><b>.mergulho</b></p>
+    <div class="fc-switch mergulho">
+      <label>
+        Off
+        <input type="checkbox" checked>
+        <span class="lever"></span> On
+      </label>
+    </div>
+    <p><b>.passeio-noturno</b></p>
+    <div class="fc-switch passeio-noturno">
+      <label>
+        Off
+        <input type="checkbox" checked>
+        <span class="lever"></span> On
+      </label>
+    </div>
+
+
+    <pre class="showcode">
+        <code>
+    &lt;div class="fc-switch">
+      &lt;label>
+        Off
+        &lt;input type="checkbox">
+        &lt;span class="lever">&lt;/span> On
+      &lt;/label>
+    &lt;/div>
+    
+    &lt;div class="fc-switch mergulho">
+      &lt;label>
+        Off
+        &lt;input type="checkbox" checked>
+        &lt;span class="lever">&lt;/span> On
+      &lt;/label>
+    &lt;/div>
+
+    &lt;div class="fc-switch passeio-noturno">
+      &lt;label>
+        Off
+        &lt;input type="checkbox" checked>
+        &lt;span class="lever">&lt;/span> On
+      &lt;/label>
+    &lt;/div></code>
+      </pre>
+  </section>
+
+  <section class="documantation-container" id="table">
+
+    <h2>Table</h2>
+    <div class="fc-table form-rh">
+      <table>
+        <thead>
+          <tr>
+            <th class="fc-col checkbox-option">
+              <div class="checkbox_field">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </div>
+            </th>
+            <th class="fc-col">First
+              <image src="images/icons/arrow_down.svg" />
+            </th>
+            <th class="fc-col">Last</th>
+            <th class="fc-col">Handle</th>
+            <th class="fc-col">Handle</th>
+            <th class="fc-col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="checkbox-option">
+              <div class="checkbox_field">
+                <input type="checkbox" checked>
+                <span class="checkmark"></span>
+              </div>
+            </td>
+            <td>Mark</td>
+            <td>Otto asda asda sdas dsa d a</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td class="checkbox-option">
+              <div class="checkbox_field">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </div>
+            </td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td class="checkbox-option">
+              <div class="checkbox_field">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </div>
+            </td>
+            <td>Marco</td>
+            <td>Tututu</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="documantation-container" id="progress">
+    <h2>Progress bar</h2>
+    <p>Use <b>.progess-color-{uma cor}</b> para definir a cor da barra de progresso.</p>
+    <p>As classes de cores disponíveis são:</p>
+    <ul>
+      <li class="fc-txt-color passeio-noturno">.progress-color-passeio-noturno</li>
+      <li class="fc-txt-color horizonte">.progress-color-horizonte</li>
+      <li class="fc-txt-color mergulho">.progress-color-mergulho</li>
+      <li class="fc-txt-color ceu-de-pipa">.progress-color-ceu-de-pipa</li>
+      <li class="fc-txt-color por-do-sol">.progress-color-por-do-sol</li>
+      <li class="fc-txt-color black">.progress-color-black</li>
+    </ul>
+
+    <h4>V2 (Atualizado)</h4>
+
+    <div class="fc-progress-bar">
+      <div class="fc-progress progress-color-passeio-noturno" style="width:21%">
+        <div class="fc-bar"></div>
+        <div class="fc-progress-value">1</div>
+      </div>
+      <div class="fc-progress progress-color-mergulho" style="width:21%">
+        <div class="fc-bar"></div>
+        <div class="fc-progress-value">2</div>
+      </div>
+      <div class="fc-progress progress-color-horizonte" style="width:21%">
+        <div class="fc-bar"></div>
+        <div class="fc-progress-value">3</div>
+      </div>
+      <div class="fc-progress progress-color-ceu-de-pipa" style="width:20%">
+        <div class="fc-bar"></div>
+        <div class="fc-progress-value">4</div>
+      </div>
+
+      <div class="fc-progress-size">5</div>
+    </div>
+
+    <pre class="showcode" style="margin-top:50px;">
+        <code>
+  <b>v2</b>
+
+  &lt;div class="fc-progress-bar">
+      &lt;div class="fc-progress <b>progress-color-mergulho</b>" style="<b>width:50%</b>">
+        &lt;div class="fc-bar">&lt;/div>
+        &lt;div class="fc-progress-value">4&lt;/div>
+      &lt;/div>          
+      &lt;div class="fc-progress <b>progress-color-horizonte</b>" style="width:20%">
+        &lt;div class="fc-bar">&lt;/div>
+        &lt;div class="fc-progress-value">5&lt;/div>
+      &lt;/div>
+      &lt;div class="fc-progress <b>progress-color-passeionoturno</b>" style="width:20%">
+        &lt;div class="fc-bar">&lt;/div>
+        &lt;div class="fc-progress-value">6&lt;/div>
+      &lt;/div>
+      &lt;div class="fc-progress-size">7&lt;/div>
+  &lt;/div></code>
+    </pre>
+
+
+  </section>
+
+  <section class="documantation-container" id="loading">
+    <h2>Loading</h2>
+    <div class="preview">
+      <span class="inner">
+        <img src="https://static.ferias.co/images/gif/loading_amarelo.gif" alt="Carregando">
+      </span>
+      <br>
+      <span class='label'>loading</span>
+    </div>
+  </section>
+
+  <section class="documantation-container" id="icones">
+
+    <h2>Icones</h2>
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-airplane-back"></i>
+      </span>
+      <br>
+      <span class='label'>airplane-back</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-airplane-out-back"></i>
+      </span>
+      <br>
+      <span class='label'>airplane-out-back</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-airplane-out"></i>
+      </span>
+      <br>
+      <span class='label'>airplane-out</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-airplane"></i>
+      </span>
+      <br>
+      <span class='label'>airplane</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-alerta"></i>
+      </span>
+      <br>
+      <span class='label'>alerta</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-approved"></i>
+      </span>
+      <br>
+      <span class='label'>approved</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-backpack-out"></i>
+      </span>
+      <br>
+      <span class='label'>backpack-out</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-bag-large"></i>
+      </span>
+      <br>
+      <span class='label'>bag-large</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-bag-medium"></i>
+      </span>
+      <br>
+      <span class='label'>bag-medium</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-bag-small"></i>
+      </span>
+      <br>
+      <span class='label'>bag-small</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-bus-out"></i>
+      </span>
+      <br>
+      <span class='label'>bus-out</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-calendar"></i>
+      </span>
+      <br>
+      <span class='label'>calendar</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-car-out"></i>
+      </span>
+      <br>
+      <span class='label'>car-out</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-carrinho"></i>
+      </span>
+      <br>
+      <span class='label'>carrinho</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-check"></i>
+      </span>
+      <br>
+      <span class='label'>check</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-checked"></i>
+      </span>
+      <br>
+      <span class='label'>checked</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-computer"></i>
+      </span>
+      <br>
+      <span class='label'>computer</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-cutlery"></i>
+      </span>
+      <br>
+      <span class='label'>cutlery</span>
+    </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class=" icon-diarias"></i>
+            </span>
+            <br>
+            <span class='label'>diarias</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class=" icon-disapproved"></i>
+            </span>
+            <br>
+            <span class='label'>disapproved</span>
+        </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-e_ferias"></i>
+      </span>
+      <br>
+      <span class='label'>e_ferias</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-edit"></i>
+      </span>
+      <br>
+      <span class='label'>edit</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-estrela"></i>
+      </span>
+      <br>
+      <span class='label'>estrela</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-fechar"></i>
+      </span>
+      <br>
+      <span class='label'>fechar</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-file"></i>
+      </span>
+      <br>
+      <span class='label'>file</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-filter"></i>
+      </span>
+      <br>
+      <span class='label'>filter</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-hospede"></i>
+      </span>
+      <br>
+      <span class='label'>hospede</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-hotel"></i>
+      </span>
+      <br>
+      <span class='label'>hotel</span>
+    </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class=" icon-icone-diarias"></i>
+            </span>
+            <br>
+            <span class='label'>icone-diarias</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class=" icon-icone-pontos"></i>
+            </span>
+            <br>
+            <span class='label'>icone-pontos</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class=" icon-issued"></i>
+            </span>
+            <br>
+            <span class='label'>issued</span>
+        </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-lixeira"></i>
+      </span>
+      <br>
+      <span class='label'>lixeira</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-logo_white"></i>
+      </span>
+      <br>
+      <span class='label'>logo_white</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-luggage"></i>
+      </span>
+      <br>
+      <span class='label'>luggage</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-lupa"></i>
+      </span>
+      <br>
+      <span class='label'>lupa</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-map"></i>
+      </span>
+      <br>
+      <span class='label'>map</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-menu"></i>
+      </span>
+      <br>
+      <span class='label'>menu</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-ordem"></i>
+      </span>
+      <br>
+      <span class='label'>ordem</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-phone"></i>
+      </span>
+      <br>
+      <span class='label'>phone</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-point"></i>
+      </span>
+      <br>
+      <span class='label'>point</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-printer"></i>
+      </span>
+      <br>
+      <span class='label'>printer</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-recebido"></i>
+      </span>
+      <br>
+      <span class='label'>recebido</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-receipt"></i>
+      </span>
+      <br>
+      <span class='label'>receipt</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-rooms"></i>
+      </span>
+      <br>
+      <span class='label'>rooms</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-send"></i>
+      </span>
+      <br>
+      <span class='label'>send</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-seta-entrada"></i>
+      </span>
+      <br>
+      <span class='label'>seta-entrada</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-seta-left"></i>
+      </span>
+      <br>
+      <span class='label'>seta-left</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-seta-right"></i>
+      </span>
+      <br>
+      <span class='label'>seta-right</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-seta-saida"></i>
+      </span>
+      <br>
+      <span class='label'>seta-saida</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-sinal-mais"></i>
+      </span>
+      <br>
+      <span class='label'>sinal-mais</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-sinal-menos"></i>
+      </span>
+      <br>
+      <span class='label'>sinal-menos</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-sino"></i>
+      </span>
+      <br>
+      <span class='label'>sino</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-surface"></i>
+      </span>
+      <br>
+      <span class='label'>surface</span>
+    </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-suspicious"></i>
+      </span>
+      <br>
+      <span class='label'>suspicious</span>
+    </div>
+    
+
+    <div class="preview">
+      <span class="inner">
+          <i class=" icon-vazio"></i>
+      </span>
+      <br>
+      <span class='label'>vazio</span>
+  </div>
+
+
+    <div class="preview">
+      <span class="inner">
+        <i class=" icon-wifi"></i>
+      </span>
+      <br>
+      <span class='label'>wifi</span>
+    </div>
+
+  </section>
+
+
+
+  <section class="documantation-container" id="tooltip">
+    <h2>Tooltip</h2>
+
+    <div class="preview" style="position: relative;    height: 80px;">
+      <div class="fc-arrow-box">
+        <div class="fc-content-arrow"> Hotel recomendado!</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

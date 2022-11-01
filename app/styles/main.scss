@@ -1,0 +1,66 @@
+
+
+.font-default {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: #707070;
+  padding: 10px;
+  padding-top: 11px;
+  float: left;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+// #region Loading
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  width: 68px;
+  height: 64px;
+  right: 0;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: 12px;
+  border: 3px solid #00b0b0;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #00b0b0 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// #endregion

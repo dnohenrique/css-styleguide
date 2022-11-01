@@ -1,0 +1,81 @@
+@import './colors';
+
+.fc-alert {
+  padding: 10px 15px;
+  border-radius: 5px;
+
+  &.fc-alert-success {
+    background-color: #d9ffff;
+    border: solid 1px $mergulho;
+    color: $mergulho;
+  }
+
+  &.fc-alert-danger {
+    background-color: $peach_light;
+    border: solid 1px $ceu_de_pipa;
+    color: $ceu_de_pipa;
+
+    a {
+      text-decoration: underline;
+      color: $ceu_de_pipa;
+    }
+  }
+
+  &.fc-alert-warning {
+    background-color: #fffcf6;
+    border: solid 1px $por_do_sol;
+    color: $por_do_sol;
+  }
+
+  i:before {
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 11px;
+  }
+
+}
+
+// Tooltipo
+.fc-arrow-box {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #dcdbdb;
+  width: 148px;
+  padding: 6px 0 27px 10px;
+  border-radius: 5px;
+  right: 3px;
+  top: 73px;
+}
+
+.fc-arrow-box:after,
+.fc-arrow-box:before {
+  bottom: 33.1px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.fc-arrow-box:after {
+  border-color: rgba(252, 252, 252, 0);
+  border-bottom-color: #fcfcfc;
+  border-width: 8px;
+  margin-left: 49px;
+}
+
+.fc-arrow-box:before {
+  border-color: rgba(245, 0, 196, 0);
+  border-bottom-color: #bcbcbc;
+  border-width: 9px;
+  margin-left: 48.1px;
+}
+
+.fc-content-arrow {
+  font-family: Roboto;
+  font-size: 14px;
+  color: $pedra_do_mar;
+  position: absolute;
+}

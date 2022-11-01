@@ -1,0 +1,189 @@
+@import './colors.scss';
+
+/*
+
+    Colocamos aqui todos os estilos que fazem parte exclusivamente da documentação Style Guide
+    e que NÃO devem ser enviados para os demais projetos.
+
+*/
+
+.documantation-container {
+  margin: auto;
+  background-color: white;
+  max-width: 900px;
+  padding: 60px;
+}
+
+
+.documantation-colors {
+  p {
+    padding: 15px;
+  }
+
+  #ceu-de-pipa {
+    color: white;
+    background-color: $ceu_de_pipa;
+  }
+
+  #pe-na-areia {
+    color: $pedra_do_mar;
+    background-color: $pe_na_areia;
+  }
+
+  #horizonte {
+    color: white;
+    background-color: $horizonte;
+  }
+
+  #por-do-sol {
+    color: white;
+    background-color: $por_do_sol;
+  }
+
+  #mergulho {
+    color: white;
+    background-color: $mergulho;
+  }
+
+  #passeio-noturno {
+    color: white;
+    background-color: $passeio_noturno;
+  }
+
+  #pedra-do-mar {
+    color: white;
+    background-color: $pedra_do_mar;
+  }
+
+  #pe-na-estrada {
+    color: white;
+    background-color: $pe_na_estrada;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .documantation-container {
+    padding: 20px;
+  }
+}
+
+.documentation-buttons {
+  button {
+    margin-bottom: 10px;
+  }
+}
+
+
+pre.showcode {
+  background-color: #535252;
+  color: white;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+code {
+  cursor: text;
+  display: block;
+
+  b {
+    color: #00b0b0;
+  }
+}
+
+
+.preview {
+  width: 100px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.preview .inner {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: #f5f5f5;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.preview .inner i {
+  line-height: 85px;
+  font-size: 40px;
+  color: #333;
+}
+
+.preview .label {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 10px;
+  font-family: Monaco, monospace;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #ddd;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  color: #666;
+}
+
+
+
+.title-page {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: center;
+  color: #535252;
+}
+
+
+.back-to-top {
+  display: inline-block;
+  background-color: $mergulho;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+}
+
+.back-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  background-color: darken($color: $mergulho, $amount: 5%);
+  ;
+}
+
+.back-to-top:active {
+  background-color: darken($color: $mergulho, $amount: 10%);
+  ;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}

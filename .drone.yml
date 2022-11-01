@@ -1,0 +1,130 @@
+---
+kind: pipeline
+type: docker
+name: Pull request
+
+trigger:
+  event:
+  - pull_request
+
+steps:
+- name: Validate CloudFormation template
+  image: robertstettner/drone-cloudformation
+  settings:
+    mode: validate
+    template: template.yml
+    
+---
+kind: pipeline
+type: docker
+name: Integration
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
+
+volumes:
+- name: dockersock
+  host:
+    path: /var/run/docker.sock
+
+steps:
+
+- name: Fetch submodules
+  image: alpine/git
+  commands:
+  - git submodule update --init
+
+- name: Build and push Docker image
+  image: diegoaltx/drone-ecr-build-push:v1.0.0-rc.5
+  volumes:
+  - name: dockersock
+    path: /var/run/docker.sock
+  settings:
+    repo: ${DRONE_REPO_NAME}
+    region:
+    - us-east-1
+    tags:
+    - latest
+    - commit-${DRONE_COMMIT:0:7}
+
+---
+kind: pipeline
+type: docker
+name: Sync static
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
+
+steps:
+
+- name: Install
+  image: node:10
+  commands:
+  - npm install
+  
+- name: Build
+  image: node:10
+  commands:
+  - npm run build
+
+- name: Sync images to S3
+  image: amazon/aws-cli
+  commands:
+  - aws s3 sync dist/images s3://shared-prd-static/images --acl public-read --delete
+  
+- name: Invalidate images cache on CloudFront
+  image: amazon/aws-cli
+  commands:
+  - aws cloudfront create-invalidation --distribution-id E18LYVMCN6I8S8 --paths "/images/*"
+
+---
+kind: pipeline
+type: docker
+name: Deployment
+
+trigger:
+  target:
+  - staging
+  - production
+  event:
+  - promote
+
+steps:
+- name: Promote Docker image
+  image: diegoaltx/drone-ecr-retag:v1.0.0-rc.3
+  settings:
+    region:
+    - us-east-1
+    tags:
+    - ${DRONE_DEPLOY_TO}
+    repo: ${DRONE_REPO_NAME}
+    
+- name: Deploy CloudFormation template
+  image: robertstettner/drone-cloudformation
+  settings:
+    mode: createOrUpdate
+    template: template.yml
+    region: us-east-1
+    stackname: ${DRONE_REPO_NAME}-${DRONE_DEPLOY_TO}
+    params:
+      Repo: ${DRONE_REPO_NAME}
+      Tag: commit-${DRONE_COMMIT:0:7}
+      Environment: ${DRONE_DEPLOY_TO}
+      Owner: portal
+
+- name: Invalidate Cloudfront CDN cache
+  image: amazon/aws-cli
+  when:
+    target:
+    - production
+  commands:
+  - >
+    aws cloudfront create-invalidation 
+    --distribution-id E2PDYL5QE7JRLH 
+    --paths "/*"

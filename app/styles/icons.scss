@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icones/icons.eot?884cea4caa5d957322fb38179419ee0a?#iefix") format("embedded-opentype"),
+        url("../fonts/icones/icons.woff2?884cea4caa5d957322fb38179419ee0a") format("woff2"),
+        url("../fonts/icones/icons.woff?884cea4caa5d957322fb38179419ee0a") format("woff"),
+        url("../fonts/icones/icons.ttf?884cea4caa5d957322fb38179419ee0a") format("truetype"),
+        url("../fonts/icones/icons.svg?884cea4caa5d957322fb38179419ee0a#icons") format("svg");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-airplane-back:before {
+    content: "\f101";
+}
+.icon-airplane-out-back:before {
+    content: "\f102";
+}
+.icon-airplane-out:before {
+    content: "\f103";
+}
+.icon-airplane:before {
+    content: "\f104";
+}
+.icon-alerta:before {
+    content: "\f105";
+}
+.icon-approved:before {
+    content: "\f106";
+}
+.icon-backpack-out:before {
+    content: "\f107";
+}
+.icon-bag-large:before {
+    content: "\f108";
+}
+.icon-bag-medium:before {
+    content: "\f109";
+}
+.icon-bag-small:before {
+    content: "\f10a";
+}
+.icon-bus-out:before {
+    content: "\f10b";
+}
+.icon-calendar:before {
+    content: "\f10c";
+}
+.icon-car-out:before {
+    content: "\f10d";
+}
+.icon-carrinho:before {
+    content: "\f10e";
+}
+.icon-check:before {
+    content: "\f10f";
+}
+.icon-checked:before {
+    content: "\f110";
+}
+.icon-computer:before {
+    content: "\f111";
+}
+.icon-cutlery:before {
+    content: "\f112";
+}
+.icon-diarias:before {
+    content: "\f113";
+}
+.icon-disapproved:before {
+    content: "\f114";
+}
+.icon-e_ferias:before {
+    content: "\f115";
+}
+.icon-edit:before {
+    content: "\f116";
+}
+.icon-estrela:before {
+    content: "\f117";
+}
+.icon-fechar:before {
+    content: "\f118";
+}
+.icon-file:before {
+    content: "\f119";
+}
+.icon-filter:before {
+    content: "\f11a";
+}
+.icon-hospede:before {
+    content: "\f11b";
+}
+.icon-hotel:before {
+    content: "\f11c";
+}
+.icon-icone-diarias:before {
+    content: "\f11d";
+}
+.icon-icone-pontos:before {
+    content: "\f11e";
+}
+.icon-issued:before {
+    content: "\f11f";
+}
+.icon-lixeira:before {
+    content: "\f120";
+}
+.icon-logo_white:before {
+    content: "\f121";
+}
+.icon-luggage:before {
+    content: "\f122";
+}
+.icon-lupa:before {
+    content: "\f123";
+}
+.icon-map:before {
+    content: "\f124";
+}
+.icon-menu:before {
+    content: "\f125";
+}
+.icon-ordem:before {
+    content: "\f126";
+}
+.icon-phone:before {
+    content: "\f127";
+}
+.icon-point:before {
+    content: "\f128";
+}
+.icon-printer:before {
+    content: "\f129";
+}
+.icon-recebido:before {
+    content: "\f12a";
+}
+.icon-receipt:before {
+    content: "\f12b";
+}
+.icon-rooms:before {
+    content: "\f12c";
+}
+.icon-send:before {
+    content: "\f12d";
+}
+.icon-seta-entrada:before {
+    content: "\f12e";
+}
+.icon-seta-left:before {
+    content: "\f12f";
+}
+.icon-seta-right:before {
+    content: "\f130";
+}
+.icon-seta-saida:before {
+    content: "\f131";
+}
+.icon-sinal-mais:before {
+    content: "\f132";
+}
+.icon-sinal-menos:before {
+    content: "\f133";
+}
+.icon-sino:before {
+    content: "\f134";
+}
+.icon-surface:before {
+    content: "\f135";
+}
+.icon-suspicious:before {
+    content: "\f136";
+}
+.icon-vazio:before {
+    content: "\f137";
+}
+.icon-wifi:before {
+    content: "\f138";
+}

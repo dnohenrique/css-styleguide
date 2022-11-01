@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="icone_cia_aerea_generica" data-name="icone cia aerea generica" transform="translate(-855 -398)">
+    <g id="Elipse_483" data-name="Elipse 483" transform="translate(855 398)" fill="none" stroke="#bcbcbc" stroke-width="2">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="13.5" fill="none"/>
+    </g>
+    <path id="Caminho_21210" data-name="Caminho 21210" d="M14.464,18.2l-2.852-2.5-.005-4.144,7.116,2.31-.011-1.715L11.554,6.57l-.007-3.281v-1.9a1.245,1.245,0,0,0-.354-.866A1.457,1.457,0,0,0,10.064,0c-.015,0-.03.005-.047.005S9.988,0,9.972,0A1.457,1.457,0,0,0,8.843.523a1.249,1.249,0,0,0-.353.866v1.9L8.482,6.57,1.325,12.154l-.011,1.715,7.115-2.31L8.422,15.7,5.571,18.2l-.005.858.332-.081,0,.177L9.425,18.12l.593-.143.594.143,3.527,1.035v-.177l.33.081Z" transform="translate(859.346 403)" fill="#bcbcbc"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+@import "./colors.scss";
+
+.wallet-content .tab-container {
+  width: 100%;
+}
+
+.wallet-content .nav-tabs .nav-link span {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #535252;
+}
+
+@media only screen and (max-width: 1111px) {
+  .wallet-content .nav-tabs .nav-link span {
+    font-size: 16px;
+  }
+}

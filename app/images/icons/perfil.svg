@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="24.929" viewBox="0 0 30 24.929">
+    <defs>
+        <style>
+            .cls-1{fill:#f9b508}
+        </style>
+    </defs>
+    <g id="perfil" transform="translate(0 -26.331)">
+        <g id="Grupo_14" data-name="Grupo 14" transform="translate(0 26.331)">
+            <path id="Caminho_55" d="M15 26.331a15 15 0 0 0-11.6 24.51c.328-2.625 2.949-4.844 6.625-5.9a7.163 7.163 0 0 0 9.856.091c3.708 1.143 6.273 3.493 6.357 6.224A15 15 0 0 0 15 26.331zm0 18.849a5.358 5.358 0 0 1-2.661-.719 6.789 6.789 0 0 1-3.26-5.942c0-3.673 2.656-6.661 5.921-6.661s5.921 2.988 5.921 6.661a6.772 6.772 0 0 1-3.35 5.991 5.346 5.346 0 0 1-2.571.67z" class="cls-1" data-name="Caminho 55" transform="translate(0 -26.331)"/>
+        </g>
+    </g>
+</svg>

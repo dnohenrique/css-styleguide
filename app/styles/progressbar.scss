@@ -1,0 +1,134 @@
+@import './colors.scss';
+
+
+// ------- V2 (UPDATED)
+
+.fc-progress-bar {
+  width: 100%;
+  height: 18.6px;
+  border-radius: 36px;
+  background-color: #f5f5f5;
+  margin-bottom: 35px;
+  position: relative;
+  margin-top: 10px;
+
+  .fc-progress {
+    &:nth-child(1) {
+      margin-left: 0px;
+
+      .fc-bar {
+        z-index: 3;
+      }
+    }
+
+    &:nth-child(2) {
+      .fc-bar {
+        z-index: 2;
+      }
+    }
+
+    &:nth-child(3) {
+      .fc-bar {
+        z-index: 1;
+      }
+    }
+  }
+
+  .fc-progress-size {
+    font-size: 20px;
+    color: #dcdcdc;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    // width: 10px;
+    position: absolute;
+    top: 19px;
+    right: 0;
+  }
+}
+
+.fc-progress {
+  float: left;
+  position: relative;
+  margin-left: -12px;
+
+
+  .fc-bar {
+    width: 100%;
+    height: 18.6px;
+    border-radius: 36px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &.progress-color-passeio-noturno {
+    .fc-bar {
+      background-color: $passeio_noturno;
+    }
+
+    .fc-progress-value {
+      color: $passeio_noturno;
+    }
+  }
+
+  &.progress-color-horizonte {
+    .fc-bar {
+      background-color: $horizonte;
+    }
+
+    .fc-progress-value {
+      color: $horizonte;
+    }
+  }
+
+  &.progress-color-mergulho {
+    .fc-bar {
+      background-color: $mergulho;
+    }
+
+    .fc-progress-value {
+      color: $mergulho;
+    }
+  }
+
+  &.progress-color-ceu-de-pipa {
+    .fc-bar {
+      background-color: $ceu_de_pipa;
+    }
+
+    .fc-progress-value {
+      color: $ceu_de_pipa;
+    }
+  }
+
+  &.progress-color-por-do-sol {
+    .fc-bar {
+      background-color: $por_do_sol;
+    }
+
+    .fc-progress-value {
+      color: $por_do_sol;
+    }
+  }
+
+  &.progress-color-black {
+    .fc-bar {
+      background-color: black;
+    }
+
+    .fc-progress-value {
+      color: black;
+    }
+  }
+
+  .fc-progress-value {
+    font-size: 20px;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 19px;
+  }
+
+}

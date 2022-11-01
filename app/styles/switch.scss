@@ -1,0 +1,82 @@
+@import './colors.scss';
+
+$color_default_lever: #d2d2d2;
+$color_default_circle: #707070;
+
+.fc-switch {
+  label {
+    cursor: pointer;
+
+    input[type=checkbox] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked,
+      &:not(:checked) {
+        position: absolute;
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      &:checked+.lever {
+        background-color: $color_default_lever;
+      }
+
+      &:checked+.lever:after {
+        left: 0.8rem;
+        background-color: $color_default_circle;
+      }
+
+      @at-root {
+        .fc-switch.mergulho#{&} {
+          &:checked+.lever:after {
+            left: 0.8rem;
+            background-color: $mergulho;
+          }
+          &:checked+.lever {
+            background-color: #9adede;
+          }
+        }
+
+        .fc-switch.passeio-noturno#{&} {
+          &:checked+.lever:after {
+            left: 0.8rem;
+            background-color: $passeio_noturno;
+          }
+          &:checked+.lever {
+            background-color: #a684cc;
+          }
+        }
+      }
+
+    }
+
+    .lever {
+      position: relative;
+      display: inline-block;
+      margin: 0 1rem;
+      margin-right: .625rem;
+      vertical-align: middle;
+      content: "";
+      background-color: #d2d2d2;
+      border-radius: .9375rem;
+      width: 26px;
+      height: 13px;
+      transition: background .3s ease;
+
+      &:after {
+        position: absolute;
+        top: -2px;
+        left: -.2rem;
+        display: inline-block;
+        content: "";
+        background-color: #707070;
+        border-radius: 1.3125rem;
+        width: 17px;
+        height: 17px;
+        transition: left .3s ease, background .3s ease, box-shadow 1s ease;
+      }
+    }
+  }
+}
